@@ -12,7 +12,9 @@
     --primary-color: #f67b6f;
     --secondary-color: #d3e1e0;
     --tertiary-color: #476160;
-    --heading-font: "Open Sans", sans-serif;
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font:"Playfair Display", serif;
+    --tertiary-font:"Montserrat", sans-serif;
 }
 
 /* navbar  */
@@ -48,7 +50,7 @@
     }
 }
 
-/* welcome and quote page  */
+/* hero section  */
 
 main{
     height: 200vh;
@@ -89,7 +91,7 @@ main{
     padding: 1.3% 3.5%;
     border-radius: 15px;
     font-size: 1rem;
-    font-family: var(--heading-font);
+    font-family: var(--primary-font);
     letter-spacing: 1px;
     background-color: var(--primary-color);
     color: white;
@@ -106,3 +108,87 @@ main{
     width: 53.2%;
     transform: translateY(11%);
 }
+
+/* latest news */
+
+.latest-news {
+    width: 100%;
+    height: 83vh;
+    background-color: var(--primary-color);
+}
+
+.latest-news h1 {
+    padding-top: 4.5%;
+    font-size: 3rem;
+    text-align: center;
+    font-family:var(--secondary-font) ;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.latest-news .btn {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
+.latest-news button {
+    font-family: var(--tertiary-font);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 0.8% 1.6%;
+    border-radius: 15px;
+    color: white;
+    background-color:var(--primary-color);
+    border: 2px solid white;
+
+    &:hover {
+        color: var(--primary-color);
+        background-color: white;
+    }
+}
+
+.post-container {
+    width: 66%;
+    height: 45vh;
+    margin: 1.3% auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+}
+
+.post-container .post {
+    width: 100%;
+    height: 44vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.post-container .post img {
+    width: 90%;
+    height: 28vh;
+    margin-top: 8%;
+    margin-left: 5.5%;
+}
+
+.post-container .post h3 {
+    margin-left: 5%;
+    margin-top: 2%;
+    font-family: var(--tertiary-font);
+    letter-spacing: 1.5px;
+    font-size: 1.15rem;
+}
+
+.post-container .post h5 {
+    margin-left: 5%;
+    margin-top: 5%;
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+    color: #b3b3b3;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+
